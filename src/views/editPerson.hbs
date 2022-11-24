@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 offset-md-3">
+      <div class="card card-body bg-dark p-4 text-white rounded-0">
+        <h1>Editar una persona</h2>
+        <form action="/person/{{person._id}}/edit" method="post">
+          <div class="mb-3">
+            <input
+              type="text"
+              name="nombre"
+              placeholder="nombre"
+              value="{{person.nombre}}"
+              class="from-control rounded-0 bg-dark text-white"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="apellido"
+              placeholder="apellido"
+              value="{{person.apellido}}"
+              class="from-control rounded-0 bg-dark text-white"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="docIdentidad"
+              placeholder="docIdentidad"
+              value="{{person.docIdentidad}}"
+              class="from-control rounded-0 bg-dark text-white"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="email"
+              placeholder="email"
+              value="{{person.email}}"
+              class="from-control rounded-0 bg-dark text-white"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="celular"
+              placeholder="celular"
+              value="{{person.celular}}"
+              class="from-control rounded-0 bg-dark text-white"
+            />
+          </div>
+
+          <button class="btn btn-primary">Actualizar</button>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</div>
